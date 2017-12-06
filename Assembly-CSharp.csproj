@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C3D8AEF8-68FF-36F7-6590-5C1517611E27}</ProjectGuid>
+    <ProjectGuid>{C8EADDCA-4720-0839-0229-9408DB0E549D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -132,6 +132,7 @@
      <Compile Include="Assets\Kvant\Wig\WigTemplate.cs" />
      <Compile Include="Assets\LoginService.cs" />
      <Compile Include="Assets\Shaders\Ghost\Sample\anim.cs" />
+     <Compile Include="Assets\UIReactor.cs" />
      <Compile Include="Assets\UploadService.cs" />
      <None Include="Assets\Kvant\SwarmMV\Shader\Kernels.cginc" />
      <None Include="Assets\Kvant\Wig\Shader\Common.cginc" />
@@ -172,6 +173,7 @@
      <None Include="Assets\Shaders\Ghost\ghost_texture.shader" />
      <None Include="Assets\Kvant\Wig\Shader\Filament.cginc" />
      <None Include="Assets\Kino\Datamosh\Shader\Datamosh.shader" />
+     <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
      <None Include="Assets\Kvant\Warp\Shader\Surface.shader" />
      <None Include="Assets\Kino\Vignette\Shader\Vignette.shader" />
      <None Include="Assets\Kino\Contour\Shader\Contour.shader" />
@@ -213,6 +215,10 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{A01B9760-9886-CF99-6079-293EF8E32216}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

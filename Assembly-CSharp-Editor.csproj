@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{08B4B442-50EE-AD04-4383-57B0482FD089}</ProjectGuid>
+    <ProjectGuid>{24B7DC0F-BED1-8070-AC6E-0403BEE07F9C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -174,6 +174,7 @@
      <None Include="Assets\Shaders\Ghost\ghost_texture.shader" />
      <None Include="Assets\Kvant\Wig\Shader\Filament.cginc" />
      <None Include="Assets\Kino\Datamosh\Shader\Datamosh.shader" />
+     <None Include="Assets\Plugins\UniRx\ReadMe.txt" />
      <None Include="Assets\Kvant\Warp\Shader\Surface.shader" />
      <None Include="Assets\Kino\Vignette\Shader\Vignette.shader" />
      <None Include="Assets\Kino\Contour\Shader\Contour.shader" />
@@ -248,13 +249,24 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{A01B9760-9886-CF99-6079-293EF8E32216}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{C3D8AEF8-68FF-36F7-6590-5C1517611E27}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{C8EADDCA-4720-0839-0229-9408DB0E549D}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
